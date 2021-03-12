@@ -1,4 +1,4 @@
-const external = require('./utils/math')
+const external = require('./math')
 console.log(external)
 
 async function primitive () {
