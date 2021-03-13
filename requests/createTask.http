@@ -1,0 +1,8 @@
+POST http://localhost:7000/createTask HTTP/1.1
+Content-Type: application/json
+
+{
+  "userName":"Saul",
+  "task":"Better Call Saul",
+  "isDone": "false"
+}
