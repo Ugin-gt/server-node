@@ -6,7 +6,7 @@ class Task {
     this.task = task
     this.isDone = isDone
     this.createAt = new Date()
-    this.id = db.size
+    this.id = `${db.size}`
 
     db.set(this.id, this)
     return Promise.resolve(this)
@@ -18,7 +18,7 @@ class Task {
       task,
       isDone
     })
-    return db.set(this.id)
+    return db.get(this.id)
   }
   async delete () {
     return db.set(this.id)
